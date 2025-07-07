@@ -265,7 +265,7 @@ class Target implements JsonSerializable
      *
      * @return string
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return json_decode($this->__toString(), true);
     }
