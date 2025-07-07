@@ -2,6 +2,7 @@
 
 namespace PragmaRX\Health\Support;
 
+use AllowDynamicProperties;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use JsonSerializable;
@@ -11,6 +12,7 @@ use PragmaRX\Health\Support\Traits\ImportProperties;
 use PragmaRX\Health\Support\Traits\ToArray;
 use Ramsey\Uuid\Uuid;
 
+#[AllowDynamicProperties]
 class Resource implements JsonSerializable
 {
     use ToArray, ImportProperties;
